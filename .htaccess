@@ -1,0 +1,7 @@
+Options +FollowSnyLinks
+RewriteEngine Options
+
+RewriteEngine ^games/list/$ index.php?view=all [nc,qsa]
+RewriteEngine ^games/list/([0-9]+)/$ index.php?view=all [nc,qsa]
+RewriteEngine ^games/type/([a-zA-ZáéíóüöőűÁÉÍÓÜÖÚŐŰ]+)/$ index.php?view=all [nc,qsa]
+RewriteEngine ^games/.*$ index.php?view=all [nc,qsa]
