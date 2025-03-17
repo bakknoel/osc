@@ -1,7 +1,7 @@
 Options +FollowSnyLinks
 RewriteEngine Options
 
-RewriteEngine ^games/list/$ index.php?view=all [nc,qsa]
-RewriteEngine ^games/list/([0-9]+)/$ index.php?view=all [nc,qsa]
-RewriteEngine ^games/type/([a-zA-ZáéíóüöőűÁÉÍÓÜÖÚŐŰ]+)/$ index.php?view=all [nc,qsa]
-RewriteEngine ^games/.*$ index.php?view=all [nc,qsa]
+RewriteEngine ^car/list/$ index.php?view=all [nc,qsa]
+RewriteEngine ^car/list/([0-9]+)/$ index.php?view=all [nc,qsa]
+RewriteEngine ^car/type/([a-zA-ZáéíóüöőűÁÉÍÓÜÖÚŐŰ]+)/$ index.php?view=tipus&ct_desc=$1 [nc,qsa]
+RewriteEngine ^car/.*$ index.php [nc,qsa]
